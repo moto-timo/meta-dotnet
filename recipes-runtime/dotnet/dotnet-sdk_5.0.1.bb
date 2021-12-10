@@ -12,6 +12,6 @@ SRC_URI = "${SOURCE_URL};unpack=0 \
 "
 SRC_URI[sha256sum] = "65d51e333ea2b9ede58a805f488b0ceb634a10d52dff628f479cc5fae102acec"
 
-RCONFLICTS_${PN} += "dotnet"
+RCONFLICTS:${PN} += "dotnet"
 
 include dotnet_installer.inc
