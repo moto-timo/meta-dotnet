@@ -1,7 +1,7 @@
 # Path to the dotnet project
 OECMAKE_SOURCEPATH ??= "${S}"
 
-DEPENDS:prepend += "dotnet-sdk-native "
+DEPENDS:prepend = "dotnet-sdk-native "
 
 B = "${S}/out"
 
