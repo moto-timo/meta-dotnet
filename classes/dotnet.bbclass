@@ -3,6 +3,9 @@ OECMAKE_SOURCEPATH ??= "${S}"
 
 DEPENDS:prepend = "dotnet-sdk-native "
 
+# https://github.com/dotnet/core/YoctoInstructions.md
+RDEPENDS_${PN} += "packagegroup-dotnet-deps"
+
 B = "${S}/out"
 
 dotnet_do_configure() {
