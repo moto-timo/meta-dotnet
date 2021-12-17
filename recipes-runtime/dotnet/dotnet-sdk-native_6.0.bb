@@ -22,4 +22,4 @@ do_install() {
     tar -xvzf ${WORKDIR}/${SOURCE_FILE} -C ${D}${bindir}
 }
 
-INSANE_SKIP_${PM}  = "already-stripped"
+INSANE_SKIP_${PN}  = "already-stripped"
